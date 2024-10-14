@@ -1,0 +1,111 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\title{Raport z negocjacji}
+\author{Marek Kacprzak}
+\date{11 października 2024}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\section{Podsumowanie}
+Zadaniem zespołu jest opracowanie aplikacji, która pozwala na wgląd w osiągnięcia naukowe pracowników akademickich. Aplikacja będzie prezentować różnorodne dane, takie jak obszary badawcze, publikacje oraz wskaźniki bibliometryczne poszczególnych naukowców. Dodatkowo, system umożliwi porównywanie dorobku między naukowcami.
+
+\section{Technologia}
+Aplikacja będzie działać w przeglądarce internetowej i zostanie oparta na następujących technologiach:
+\begin{itemize}
+  \item \textbf{ASP.NET} - Framework firmy Microsoft do budowy aplikacji webowych.
+  \item \textbf{Microsoft Azure} - Platforma chmurowa dostarczająca narzędzia do bezpiecznego przechowywania i przetwarzania danych oraz hostingu aplikacji.
+  \item \textbf{Azure PostgreSQL} - Zarządzana usługa bazy danych PostgreSQL w chmurze Azure, pozwalająca na tworzenie i utrzymanie baz danych.
+\end{itemize}
+
+\section{Opis aplikacji}
+\subsection{Główne widoki}
+\begin{itemize}
+  \item \textbf{Strona główna} - Zawiera wyszukiwarkę pozwalającą na znalezienie pracowników naukowych według różnych kryteriów. Na stronie tej wyświetlani będą też naukowcy o najwyższej liczbie publikacji oraz najlepiej wypadający pod względem wskaźników bibliometrycznych.
+  \item \textbf{Widok pracownika} - Prezentuje szczegółowe informacje o naukowcu, w tym jego obszary badań, wskaźniki bibliometryczne oraz publikacje. Użytkownik może również przejść do porównania z innymi naukowcami.
+  \item \textbf{Widok porównania} - Umożliwia zestawienie dorobku naukowców według różnych filtrów, takich jak stopień naukowy czy dziedzina badań. Aplikacja wygeneruje graficzną wizualizację wyników porównania.
+\end{itemize}
+
+\subsection{Logika działania}
+\begin{itemize}
+  \item Aplikacja będzie regularnie pobierać dane ze strony \texttt{bw.sggw.edu.pl} i aktualizować swoją bazę danych.
+  \item Po wpisaniu odpowiednich informacji, użytkownik będzie mógł wyszukać naukowca, a dane zostaną pobrane z bazy i wyświetlone w widoku naukowca.
+  \item Aplikacja pozwoli także na porównanie dorobku kilku naukowców, z odpowiednią wizualizacją wyników.
+\end{itemize}
+
+\subsection{Mechanizmy}
+\begin{itemize}
+  \item \textbf{Mechanizm pobierania danych} - Odpowiada za regularne zbieranie danych ze strony \texttt{bw.sggw.edu.pl}.
+  \item \textbf{Mechanizm aktualizacji danych} - Umożliwia aktualizację bazy danych w chmurze po każdej operacji pobierania danych.
+  \item \textbf{Mechanizm wyszukiwania} - Pozwala na wyszukiwanie pracowników według filtrów z tolerancją na błędy użytkownika.
+  \item \textbf{Mechanizm wizualizacji} - Przetwarza dane z bazy i przedstawia je w formie graficznych podsumowań i porównań.
+\end{itemize}
+
+\subsection{Możliwe wyzwania i rozwiązania}
+\begin{itemize}
+  \item \textbf{Problemy z pobieraniem danych} - Zmiana struktury strony może spowodować, że skrypty przestaną działać. Możliwe rozwiązanie to wprowadzenie systemu powiadomień dla osób odpowiedzialnych za utrzymanie aplikacji.
+  \item \textbf{Trudności w porównywaniu dorobku} - Porównanie naukowców z różnych dziedzin może być trudne ze względu na różnice w ich wskaźnikach bibliometrycznych. Rozwiązaniem może być dodanie sekcji wyjaśniającej metodę obliczania wskaźników i specyfikę różnych dziedzin naukowych.
+  \item \textbf{Wydajność przy dużych zbiorach danych} - Aplikacja może działać wolno przy dużej liczbie danych. Konieczne jest wdrożenie optymalnych algorytmów wyszukiwania i sortowania.
+\end{itemize}
+
+\subsection{Pytania}
+\begin{enumerate}
+  \item Jak najlepiej porównywać naukowców z różnych dziedzin?
+  \item Kim będą główni użytkownicy aplikacji?
+  \item Czy aplikacja będzie dostępna dla ogółu, czy tylko dla klienta?
+  \item Czy interfejs powinien obsługiwać różne wersje językowe?
+  \item Czy aplikacja powinna zbierać dane o wyszukiwaniach i generować statystyki?
+  \item Czy interfejs powinien posiadać określoną paletę kolorów?
+  \item Jakie wskaźniki bibliometryczne są najistotniejsze?
+  \item Czy znaczenie wskaźników zależy od dziedziny naukowca?
+  \item Czy aplikacja powinna umożliwiać porównanie więcej niż dwóch naukowców jednocześnie?
+  \item Jak często baza danych powinna być aktualizowana?
+\end{enumerate}
+
+\section{Sekcja techniczna}
+\subsection{Podział projektu}
+Na podstawie wymagań projektowych podzielono projekt na poniższe komponenty:
+
+\subsubsection{Scraper}
+\begin{itemize}
+  \item \textbf{Python:} \textbf{Beautiful Soup} lub \textbf{Scrapy}
+  \item \textbf{JavaScript:} \textbf{Puppeteer}
+  \item Scraper będzie odpowiadał za przeglądanie strony i zbieranie danych, które następnie zostaną zapisane w bazie danych.
+\end{itemize}
+
+\subsubsection{Baza danych}
+\begin{itemize}
+  \item \textbf{PostgreSQL} - Brak dodatkowych uwag.
+\end{itemize}
+
+\subsubsection{API}
+\begin{itemize}
+  \item API będzie pośredniczyć między bazą danych a frontendem użytkownika.
+  \item Możemy napisać API w Pythonie, Go, Rust, lub, ewentualnie, w C\#, choć ostatnia opcja nie jest preferowana.
+\end{itemize}
+
+\subsubsection{Frontend}
+\begin{itemize}
+  \item Możliwe są dwa podejścia: tradycyjne z użyciem HTML, CSS i JS lub nowoczesne z wykorzystaniem frameworka, np. \textbf{React}, \textbf{Angular} czy \textbf{Vue}.
+  \item Frontend będzie odpowiedzialny za prezentację danych z bazy i umożliwi użytkownikowi filtrowanie informacji.
+\end{itemize}
+
+\subsubsection{Dokumentacja}
+\begin{itemize}
+  \item Dokumentację można generować automatycznie tam, gdzie jest to obsługiwane, np. za pomocą \textbf{OpenAPI}, lub przygotować ręcznie w plikach \texttt{.yml}.
+\end{itemize}
+
+\subsubsection{Testowanie}
+\begin{itemize}
+  \item \textbf{Testowanie API} - Testy jednostkowe.
+  \item \textbf{Testowanie frontendu} - Testy integracyjne.
+  \item \textbf{Testowanie scrapera} - Sposób testowania będzie ustalony później.
+\end{itemize}
+
+\end{document}
