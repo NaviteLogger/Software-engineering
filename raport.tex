@@ -33,13 +33,22 @@ Aplikacja będzie działać w przeglądarce internetowej i zostanie oparta na na
   \item \textbf{Strona główna} - Zawiera wyszukiwarkę pozwalającą na znalezienie pracowników naukowych według różnych kryteriów. Na stronie tej wyświetlani będą też naukowcy o najwyższej liczbie publikacji oraz najlepiej wypadający pod względem wskaźników bibliometrycznych.
   \item \textbf{Widok pracownika} - Prezentuje szczegółowe informacje o naukowcu, w tym jego obszary badań, wskaźniki bibliometryczne oraz publikacje. Użytkownik może również przejść do porównania z innymi naukowcami.
   \item \textbf{Widok porównania} - Umożliwia zestawienie dorobku naukowców według różnych filtrów, takich jak stopień naukowy czy dziedzina badań. Aplikacja wygeneruje graficzną wizualizację wyników porównania.
+  \item \textbf{Widok dziedzin} - Prezentuje listę dziedzin naukowych oraz naukowców z danej dziedziny. Użytkownik może wybrać dziedzinę, aby zobaczyć listę naukowców.
+  \item \textbf{Widok publikacji} - Wyświetla listę publikacji naukowca wraz z informacjami takimi jak liczba cytowań czy czasopismo naukowe.
+  \item \textbf{Widok statystyk} - Prezentuje ogólne statystyki dotyczące naukowców, takie jak średnia liczba publikacji czy średni wskaźnik cytowań.
+  \item \textbf{Konto przeglądającego} - Umożliwia zalogowanie się do aplikacji, co pozwala na zapisywanie ulubionych naukowców oraz dostęp do dodatkowych funkcji.
+  \item \textbf{Widok ustawień} - Pozwala na dostosowanie ustawień aplikacji, takich jak język czy powiadomienia.
+  \item \textbf{Widok pomocy} - Zawiera informacje o aplikacji, w tym instrukcje obsługi i odpowiedzi na najczęściej zadawane pytania.
+  \item \textbf{Widok o aplikacji} - Zawiera informacje o autorach aplikacji, źródłach danych oraz sposobie działania aplikacji.
+  \item \textbf{Widok kontaktu} - Pozwala na kontakt z zespołem odpowiedzialnym za aplikację.
 \end{itemize}
 
 \subsection{Logika działania}
 \begin{itemize}
-  \item Aplikacja będzie regularnie pobierać dane ze strony \texttt{bw.sggw.edu.pl} i aktualizować swoją bazę danych.
-  \item Po wpisaniu odpowiednich informacji, użytkownik będzie mógł wyszukać naukowca, a dane zostaną pobrane z bazy i wyświetlone w widoku naukowca.
+  \item Aplikacja będzie regularnie zdzierać dane ze strony \texttt{bw.sggw.edu.pl} , oczyszczać je, a natępnie aktualizować swoją bazę danych.
+  \item Po wpisaniu odpowiednich informacji i ustawieniu filtrów, użytkownik będzie mógł wyszukać pracownika SGGW, a dane zostaną pobrane z bazy i wyświetlone w widoku naukowca.
   \item Aplikacja pozwoli także na porównanie dorobku kilku naukowców, z odpowiednią wizualizacją wyników.
+  \item Użytkownik będzie mógł zalogować się do aplikacji, co pozwoli na zapisywanie ulubionych naukowców oraz dostęp do dodatkowych funkcji.
 \end{itemize}
 
 \subsection{Mechanizmy}
