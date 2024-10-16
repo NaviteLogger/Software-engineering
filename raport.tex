@@ -13,21 +13,25 @@
 
 \tableofcontents
 
-\section{Podsumowanie}
-Zadaniem zespołu jest opracowanie aplikacji, która pozwala na wgląd w osiągnięcia naukowe pracowników akademickich. Aplikacja będzie prezentować różnorodne dane, takie jak obszary badawcze, publikacje oraz wskaźniki bibliometryczne poszczególnych naukowców. Dodatkowo, system umożliwi porównywanie dorobku między naukowcami.
+\section{Podsumowanie negocjacji}
+Przed zespołem programistów zostało postawnione zadanie stworzenia aplikacji webowej, która pozwoli na wgląd w osiągnięcia naukowe pracowników akademickich. Aplikacja będzie prezentować różnorodne dane, takie jak obszary badawcze, publikacje oraz wskaźniki bibliometryczne poszczególnych naukowców.
+Dodatkowo, system umożliwi porównywanie dorobku między naukowcami.
 
 \section{Technologia}
-Aplikacja będzie działać w przeglądarce internetowej i zostanie oparta na następujących technologiach:
+Aplikacja webowa będzie działać w przeglądarce internetowej klienta oraz na zewnętrznym hostingu chmurowym. Zostanie oparta na następujących technologiach:
 \begin{itemize}
-  \item \textbf{Golang} - Język programowania do tworzenia API.
-  \item \textbf{React} - Biblioteka JavaScript do tworzenia interfejsów użytkownika.
-  \item \textbf{Python} - Język programowania do tworzenia skryptów scrapujących.
+  \item \textbf{Golang lub Rust} - Języki programowania do tworzenia API.
+  \item \textbf{React lub Angular} - Biblioteki do tworzenia interfejsu użytkownika.
+  \item \textbf{Python lub JavaScript} - Języki programowania do tworzenia skryptów scrapujących.
   \item \textbf{PostgreSQL} - System zarządzania relacyjnymi bazami danych.
   \item \textbf{DigitalOcean} - Dostawca usług chmurowych.
   \item \textbf{Docker} - Narzędzie do virtualizacji aplikacji.
+  \item \textbf{GitHub} - Platforma do zarządzania kodem źródłowym.
+  \item \textbf{Git} - System kontroli wersji.
 \end{itemize}
 
 \section{Opis działania aplikacji}
+Aplikacja zostanie podzielona na widoki oraz mechanizmy, które będą realizować określone funkcje.
 \subsection{Główne widoki}
 \begin{itemize}
   \item \textbf{Strona główna} - Zawiera wyszukiwarkę pozwalającą na znalezienie pracowników naukowych według różnych kryteriów. Na stronie tej wyświetlani będą też naukowcy o najwyższej liczbie publikacji oraz najlepiej wypadający pod względem wskaźników bibliometrycznych.
@@ -43,7 +47,7 @@ Aplikacja będzie działać w przeglądarce internetowej i zostanie oparta na na
   \item \textbf{Widok kontaktu} - Pozwala na kontakt z zespołem odpowiedzialnym za aplikację.
 \end{itemize}
 
-\subsection{Logika działania}
+\subsection{Logika działania i mechanizmy}
 \begin{itemize}
   \item Aplikacja będzie regularnie zdzierać dane ze strony \texttt{bw.sggw.edu.pl} , oczyszczać je, a natępnie aktualizować swoją bazę danych.
   \item Po wpisaniu odpowiednich informacji i ustawieniu filtrów, użytkownik będzie mógł wyszukać pracownika SGGW, a dane zostaną pobrane z bazy i wyświetlone w widoku naukowca.
@@ -57,6 +61,7 @@ Aplikacja będzie działać w przeglądarce internetowej i zostanie oparta na na
   \item \textbf{Mechanizm aktualizacji danych} - Umożliwia aktualizację bazy danych w chmurze po każdej operacji pobierania danych.
   \item \textbf{Mechanizm wyszukiwania} - Pozwala na wyszukiwanie pracowników według filtrów z tolerancją na błędy użytkownika.
   \item \textbf{Mechanizm wizualizacji} - Przetwarza dane z bazy i przedstawia je w formie graficznych podsumowań i porównań.
+  \item \textbf{Mechanizm zapisywania} - Pozwala na zapisywanie ulubionych naukowców i ustawień użytkownika.
 \end{itemize}
 
 \subsection{Możliwe wyzwania i rozwiązania}
@@ -64,19 +69,19 @@ Aplikacja będzie działać w przeglądarce internetowej i zostanie oparta na na
   \item \textbf{Problemy z pobieraniem danych} - Zmiana struktury strony może spowodować, że skrypty przestaną działać. Możliwe rozwiązanie to wprowadzenie systemu powiadomień dla osób odpowiedzialnych za utrzymanie aplikacji.
   \item \textbf{Trudności w porównywaniu dorobku} - Porównanie naukowców z różnych dziedzin może być trudne ze względu na różnice w ich wskaźnikach bibliometrycznych. Rozwiązaniem może być dodanie sekcji wyjaśniającej metodę obliczania wskaźników i specyfikę różnych dziedzin naukowych.
   \item \textbf{Wydajność przy dużych zbiorach danych} - Aplikacja może działać wolno przy dużej liczbie danych. Konieczne jest wdrożenie optymalnych algorytmów wyszukiwania i sortowania.
+  \item \textbf{Bezpieczeństwo danych} - Dane naukowców mogą być wrażliwe, dlatego konieczne jest zabezpieczenie bazy danych i zapewnienie, że tylko uprawnione osoby mają do nich dostęp.
 \end{itemize}
 
 \subsection{Pytania}
 \begin{enumerate}
-  \item Jak najlepiej porównywać naukowców z różnych dziedzin?
   \item Kim będą główni użytkownicy aplikacji?
+  \item Z jakich urządzeń będą korzystać użytkownicy?
   \item Czy aplikacja będzie dostępna dla ogółu, czy tylko dla klienta?
+  \item Czy aplikacja będzie dostępna tylko w języku polskim?
   \item Czy interfejs powinien obsługiwać różne wersje językowe?
-  \item Czy aplikacja powinna zbierać dane o wyszukiwaniach i generować statystyki?
-  \item Czy interfejs powinien posiadać określoną paletę kolorów?
-  \item Jakie wskaźniki bibliometryczne są najistotniejsze?
-  \item Czy znaczenie wskaźników zależy od dziedziny naukowca?
-  \item Czy aplikacja powinna umożliwiać porównanie więcej niż dwóch naukowców jednocześnie?
+  \item Czy aplikacja powinna umożliwiać zapisywanie wyników wyszukiwań?
+  \item Czy aplikacja powinna umożliwiać zapisywanie ustawień użytkownika?
+  \item Który wskaźnik bibliometryczny jest najważniejszy dla użytkownika?
   \item Jak często baza danych powinna być aktualizowana?
 \end{enumerate}
 
@@ -106,6 +111,17 @@ Na podstawie wymagań projektowych podzielono projekt na poniższe komponenty:
 \begin{itemize}
   \item Możliwe są dwa podejścia: tradycyjne z użyciem HTML, CSS i JS lub nowoczesne z wykorzystaniem frameworka, np. \textbf{React}, \textbf{Angular} czy \textbf{Vue}.
   \item Frontend będzie odpowiedzialny za prezentację danych z bazy i umożliwi użytkownikowi filtrowanie informacji.
+\end{itemize}
+
+\subsubsection{Hosting}
+\begin{itemize}
+  \item \textbf{DigitalOcean} - Brak dodatkowych uwag.
+\end{itemize}
+
+\subsubsection{Docker}
+\begin{itemize}
+  \item \textbf{Docker} - Umożliwi nam łatwe zarządzanie kontenerami i wdrożenie aplikacji.
+  \item \textbf{Docker Compose} - Umożliwi nam zarządzanie wieloma kontenerami jednocześnie.
 \end{itemize}
 
 \subsubsection{Dokumentacja}

@@ -2,6 +2,12 @@
   "build": {
     "dockerfile": "Dockerfile"
   },
+  "runArgs": [
+    "--name",
+    "latex-devcontainer",
+    "--hostname",
+    "latex-devcontainer"
+  ],
   "name": "LaTeX",
   // "workspaceFolder": "/workspace",
   "customizations": {
