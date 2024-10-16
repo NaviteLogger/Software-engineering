@@ -1,18 +1,18 @@
 \contentsline {section}{\numberline {1}Podsumowanie negocjacji}{1}{}%
-\contentsline {section}{\numberline {2}Technologia}{2}{}%
-\contentsline {section}{\numberline {3}Opis działania aplikacji}{2}{}%
-\contentsline {subsection}{\numberline {3.1}Główne widoki}{2}{}%
-\contentsline {subsection}{\numberline {3.2}Logika działania i mechanizmy}{3}{}%
-\contentsline {subsection}{\numberline {3.3}Mechanizmy}{3}{}%
-\contentsline {subsection}{\numberline {3.4}Możliwe wyzwania i rozwiązania}{4}{}%
-\contentsline {subsection}{\numberline {3.5}Pytania}{4}{}%
-\contentsline {section}{\numberline {4}Sekcja techniczna}{4}{}%
-\contentsline {subsection}{\numberline {4.1}Podział projektu}{4}{}%
-\contentsline {subsubsection}{\numberline {4.1.1}Scraper}{5}{}%
-\contentsline {subsubsection}{\numberline {4.1.2}Baza danych}{5}{}%
-\contentsline {subsubsection}{\numberline {4.1.3}API}{5}{}%
-\contentsline {subsubsection}{\numberline {4.1.4}Frontend}{5}{}%
-\contentsline {subsubsection}{\numberline {4.1.5}Hosting}{5}{}%
-\contentsline {subsubsection}{\numberline {4.1.6}Docker}{5}{}%
-\contentsline {subsubsection}{\numberline {4.1.7}Dokumentacja}{5}{}%
-\contentsline {subsubsection}{\numberline {4.1.8}Testowanie}{6}{}%
+\contentsline {section}{\numberline {2}Opis działania aplikacji}{2}{}%
+\contentsline {subsection}{\numberline {2.1}Główne widoki}{2}{}%
+\contentsline {subsection}{\numberline {2.2}Logika działania i mechanizmy}{3}{}%
+\contentsline {subsection}{\numberline {2.3}Mechanizmy}{3}{}%
+\contentsline {subsection}{\numberline {2.4}Możliwe wyzwania i rozwiązania}{4}{}%
+\contentsline {subsection}{\numberline {2.5}Pytania do zamawiającego}{4}{}%
+\contentsline {section}{\numberline {3}Sekcja techniczna}{4}{}%
+\contentsline {subsection}{\numberline {3.1}Podział projektu}{4}{}%
+\contentsline {subsubsection}{\numberline {3.1.1}Scraper}{5}{}%
+\contentsline {subsubsection}{\numberline {3.1.2}Baza danych}{5}{}%
+\contentsline {subsubsection}{\numberline {3.1.3}API}{5}{}%
+\contentsline {subsubsection}{\numberline {3.1.4}Frontend}{5}{}%
+\contentsline {subsubsection}{\numberline {3.1.5}Hosting}{5}{}%
+\contentsline {subsubsection}{\numberline {3.1.6}Docker}{5}{}%
+\contentsline {subsubsection}{\numberline {3.1.7}Dokumentacja}{5}{}%
+\contentsline {subsubsection}{\numberline {3.1.8}Testowanie}{6}{}%
+\contentsline {subsection}{\numberline {3.2}Rozszerzenie projektu na przyszłość}{6}{}%

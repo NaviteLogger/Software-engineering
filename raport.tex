@@ -17,19 +17,6 @@
 Przed zespołem programistów zostało postawnione zadanie stworzenia aplikacji webowej, która pozwoli na wgląd w osiągnięcia naukowe pracowników akademickich. Aplikacja będzie prezentować różnorodne dane, takie jak obszary badawcze, publikacje oraz wskaźniki bibliometryczne poszczególnych naukowców.
 Dodatkowo, system umożliwi porównywanie dorobku między naukowcami.
 
-\section{Technologia}
-Aplikacja webowa będzie działać w przeglądarce internetowej klienta oraz na zewnętrznym hostingu chmurowym. Zostanie oparta na następujących technologiach:
-\begin{itemize}
-  \item \textbf{Golang lub Rust} - Języki programowania do tworzenia API.
-  \item \textbf{React lub Angular} - Biblioteki do tworzenia interfejsu użytkownika.
-  \item \textbf{Python lub JavaScript} - Języki programowania do tworzenia skryptów scrapujących.
-  \item \textbf{PostgreSQL} - System zarządzania relacyjnymi bazami danych.
-  \item \textbf{DigitalOcean} - Dostawca usług chmurowych.
-  \item \textbf{Docker} - Narzędzie do virtualizacji aplikacji.
-  \item \textbf{GitHub} - Platforma do zarządzania kodem źródłowym.
-  \item \textbf{Git} - System kontroli wersji.
-\end{itemize}
-
 \section{Opis działania aplikacji}
 Aplikacja zostanie podzielona na widoki oraz mechanizmy, które będą realizować określone funkcje.
 \subsection{Główne widoki}
@@ -50,7 +37,12 @@ Aplikacja zostanie podzielona na widoki oraz mechanizmy, które będą realizowa
 \subsection{Logika działania i mechanizmy}
 \begin{itemize}
   \item Aplikacja będzie regularnie zdzierać dane ze strony \texttt{bw.sggw.edu.pl} , oczyszczać je, a natępnie aktualizować swoją bazę danych.
+  \item Pobierane będą informacje o profesorach, adiunktach, doktorach oraz innych pracownikach naukowych SGGW.
+  \item Będziemy pobierać dane takie jak imię, nazwisko, stopień naukowy, dziedzina badań, liczba publikacji, wskaźniki bibliometryczne, publikacje (w czasopismach oraz po konferencjach) oraz cytowania.
+  \item Dodkatkowym źródłem informacji o pracach naukowych będzie portal \texttt{https://punktoza.pl/}.
   \item Po wpisaniu odpowiednich informacji i ustawieniu filtrów, użytkownik będzie mógł wyszukać pracownika SGGW, a dane zostaną pobrane z bazy i wyświetlone w widoku naukowca.
+  \item Filtrowanie będzie możliwe po instytutach, pracowniach, dziedzinach badań, stopniach naukowych, wskaźnikach bibliometrycznych oraz liczbie publikacji.
+  \item Najważniejszymi wskaźnikami będzie IF, liczba cytowań oraz publikacji, punktacja ministerialna oraz H-index.
   \item Aplikacja pozwoli także na porównanie dorobku kilku naukowców, z odpowiednią wizualizacją wyników.
   \item Użytkownik będzie mógł zalogować się do aplikacji, co pozwoli na zapisywanie ulubionych naukowców oraz dostęp do dodatkowych funkcji.
 \end{itemize}
@@ -72,7 +64,7 @@ Aplikacja zostanie podzielona na widoki oraz mechanizmy, które będą realizowa
   \item \textbf{Bezpieczeństwo danych} - Dane naukowców mogą być wrażliwe, dlatego konieczne jest zabezpieczenie bazy danych i zapewnienie, że tylko uprawnione osoby mają do nich dostęp.
 \end{itemize}
 
-\subsection{Pytania}
+\subsection{Pytania do zamawiającego}
 \begin{enumerate}
   \item Kim będą główni użytkownicy aplikacji?
   \item Z jakich urządzeń będą korzystać użytkownicy?
@@ -134,6 +126,11 @@ Na podstawie wymagań projektowych podzielono projekt na poniższe komponenty:
   \item \textbf{Testowanie API} - Testy jednostkowe.
   \item \textbf{Testowanie frontendu} - Testy integracyjne.
   \item \textbf{Testowanie scrapera} - Sposób testowania będzie ustalony później.
+\end{itemize}
+
+\subsection{Rozszerzenie projektu na przyszłość}
+\begin{itemize}
+  \item \textbf{Kolejne platformy} - Możliwe jest rozszerzenie projektu o dodatkowe platformy, z których można pobierać dane o pracownikach naukowych.
 \end{itemize}
 
 \end{document}
