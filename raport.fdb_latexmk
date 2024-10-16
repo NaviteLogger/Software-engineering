@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1729104125.88858 "/workspaces/LaTeX/raport.tex" "raport.pdf" "raport" 1729104126.2537 0
+["pdflatex"] 1729104807.60566 "/workspaces/LaTeX/raport.tex" "raport.pdf" "raport" 1729104807.96567 0
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -46,10 +46,10 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1728817751 5474851 4ed67577533af4c9bcc5e8bed469707c ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1728819763 3325953 7d9479afe4848309b74c3de076e20827 ""
   "/usr/local/texlive/2024/texmf.cnf" 1728817558 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
-  "/workspaces/LaTeX/raport.tex" 1729104125.076 8913 8a55099c5457f9e9a1a74fb84945af3c ""
-  "raport.aux" 1729104126.19601 2018 db9279b5f738c5dab8232a9814b9239b "pdflatex"
-  "raport.tex" 1729104125.076 8913 8a55099c5457f9e9a1a74fb84945af3c ""
-  "raport.toc" 1729104126.19701 1248 8d390aa7cc46714deef6022d8c8f3d2a "pdflatex"
+  "/workspaces/LaTeX/raport.tex" 1729104806.8077 8858 2e6748b9e01b7a2beb27037186114e08 ""
+  "raport.aux" 1729104807.90871 1868 b7e468e290c89540e73a1dc953b1ef07 "pdflatex"
+  "raport.tex" 1729104806.8077 8858 2e6748b9e01b7a2beb27037186114e08 ""
+  "raport.toc" 1729104807.90971 1139 9f53a7af74b97fe58c726a9e23794599 "pdflatex"
   (generated)
   "raport.aux"
   "raport.log"

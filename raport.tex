@@ -79,50 +79,49 @@ Aplikacja zostanie podzielona na widoki oraz mechanizmy, które będą realizowa
 \end{enumerate}
 \newpage
 \section{Sekcja techniczna}
-\subsection{Podział projektu}
 Na podstawie wymagań projektowych podzielono projekt na poniższe komponenty:
 
-\subsubsection{Scraper}
+\subsection{Scraper}
 \begin{itemize}
   \item \textbf{Python:} \textbf{Beautiful Soup} lub \textbf{Scrapy}
   \item \textbf{JavaScript:} \textbf{Puppeteer}
   \item Scraper będzie odpowiadał za przeglądanie strony i zbieranie danych, które następnie zostaną zapisane w bazie danych.
 \end{itemize}
 
-\subsubsection{Baza danych}
+\subsection{Baza danych}
 \begin{itemize}
   \item \textbf{PostgreSQL} - Brak dodatkowych uwag.
 \end{itemize}
 
-\subsubsection{API}
+\subsection{API}
 \begin{itemize}
   \item API będzie pośredniczyć między bazą danych a frontendem użytkownika.
   \item Możemy napisać API w Pythonie, Go, Rust, lub, ewentualnie, w C\#, choć ostatnia opcja nie jest preferowana.
 \end{itemize}
 
-\subsubsection{Frontend}
+\subsection{Frontend}
 \begin{itemize}
   \item Możliwe są dwa podejścia: tradycyjne z użyciem HTML, CSS i JS lub nowoczesne z wykorzystaniem frameworka, np. \textbf{React}, \textbf{Angular} czy \textbf{Vue}.
   \item Frontend będzie odpowiedzialny za prezentację danych z bazy i umożliwi użytkownikowi filtrowanie informacji.
 \end{itemize}
 
-\subsubsection{Hosting}
+\subsection{Hosting}
 \begin{itemize}
   \item \textbf{DigitalOcean} - Brak dodatkowych uwag.
 \end{itemize}
 
-\subsubsection{Docker}
+\subsection{Docker}
 \begin{itemize}
   \item \textbf{Docker} - Umożliwi nam łatwe zarządzanie kontenerami i wdrożenie aplikacji.
   \item \textbf{Docker Compose} - Umożliwi nam zarządzanie wieloma kontenerami jednocześnie.
 \end{itemize}
 
-\subsubsection{Dokumentacja}
+\subsection{Dokumentacja}
 \begin{itemize}
   \item Dokumentację można generować automatycznie tam, gdzie jest to obsługiwane, np. za pomocą \textbf{OpenAPI}, lub przygotować ręcznie w plikach \texttt{.yml}.
 \end{itemize}
 
-\subsubsection{Testowanie}
+\subsection{Testowanie}
 \begin{itemize}
   \item \textbf{Testowanie API} - Testy jednostkowe, zostaną ustalone z drużyną testerów.
   \item \textbf{Testowanie frontendu} - Testy integracyjne i jednostkowe, zostaną ustalone z drużyną testerów.
