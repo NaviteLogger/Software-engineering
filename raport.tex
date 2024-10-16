@@ -90,13 +90,13 @@ Na podstawie wymagań projektowych podzielono projekt na poniższe komponenty:
 
 \subsection{Baza danych}
 \begin{itemize}
-  \item \textbf{PostgreSQL} - Brak dodatkowych uwag.
+  \item \textbf{PostgreSQL} - Baza danych o lepszej wydajności niż MySQL.
 \end{itemize}
 
 \subsection{API}
 \begin{itemize}
   \item API będzie pośredniczyć między bazą danych a frontendem użytkownika.
-  \item Możemy napisać API w Pythonie, Go, Rust, lub, ewentualnie, w C\#, choć ostatnia opcja nie jest preferowana.
+  \item API zostanie zaimplementowane w języku \textbf{Go} z użyciem frameworka \textbf{Gin} lub \textbf{Rust} z użyciem frameworka \textbf{Axum}.
 \end{itemize}
 
 \subsection{Frontend}
@@ -107,7 +107,7 @@ Na podstawie wymagań projektowych podzielono projekt na poniższe komponenty:
 
 \subsection{Hosting}
 \begin{itemize}
-  \item \textbf{DigitalOcean} - Brak dodatkowych uwag.
+  \item \textbf{DigitalOcean} - Dostawca chmury, który zapewni nam serwer do hostowania aplikacji.
 \end{itemize}
 
 \subsection{Docker}
