@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.13)  16 OCT 2024 19:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.13)  23 OCT 2024 21:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -130,45 +130,50 @@ Overfull \hbox (3.08167pt too wide) in paragraph at lines 18--20
  []
 
 
-Overfull \hbox (0.90778pt too wide) in paragraph at lines 27--28
+Overfull \hbox (22.28995pt too wide) in paragraph at lines 18--20
+\T1/cmr/m/n/10 Do-datkowo, sys-tem umo»liwi porówny-wanie dorobku mi¦dzy naukow-cami. Naukowcy
+ []
+
+
+Overfull \hbox (0.90778pt too wide) in paragraph at lines 28--29
 []\T1/cmr/bx/n/10 Widok porów-na-nia \T1/cmr/m/n/10 - Umo»li-wia zestaw-ie-nie dorobku naukowców wedªug
  []
 
 
-Overfull \hbox (6.17038pt too wide) in paragraph at lines 31--32
+Overfull \hbox (6.17038pt too wide) in paragraph at lines 33--34
 \T1/cmr/m/n/10 pozwala na za-pisy-wanie ulu-bionych naukowców oraz dost¦p do do-datkowych
  []
 
 
 
 [3{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 40.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 42.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-Overfull \hbox (83.2349pt too wide) in paragraph at lines 43--44
+Overfull \hbox (83.2349pt too wide) in paragraph at lines 45--46
 []\T1/cmr/m/n/10 Dodatkowym ¹ródªem in-for-ma-cji o pra-cach naukowych b¦dzie por-tal \T1/cmtt/m/n/10 https://punktoza.pl/\T1/cmr/m/n/10 . 
  []
 
 
-Overfull \hbox (6.7258pt too wide) in paragraph at lines 45--46
+Overfull \hbox (6.7258pt too wide) in paragraph at lines 47--48
 []\T1/cmr/m/n/10 Filtrowanie b¦dzie mo»liwe po in-sty-tu-tach, pra-cow-n-i-ach, dziedz-i-nach bada«,
  []
 
 
-Overfull \hbox (16.02908pt too wide) in paragraph at lines 47--48
+Overfull \hbox (16.02908pt too wide) in paragraph at lines 49--50
 []\T1/cmr/m/n/10 Aplikacja poz-woli tak»e na porów-nanie dorobku kilku naukowców, z odpowied-
- []
-
-
-Overfull \hbox (10.65678pt too wide) in paragraph at lines 57--58
-[]\T1/cmr/bx/n/10 Mechanizm za-pisy-wa-nia \T1/cmr/m/n/10 - Pozwala na za-pisy-wanie ulu-bionych naukowców
  []
 
 
 
 [4]
-Overfull \hbox (18.96356pt too wide) in paragraph at lines 62--63
+Overfull \hbox (10.65678pt too wide) in paragraph at lines 59--60
+[]\T1/cmr/bx/n/10 Mechanizm za-pisy-wa-nia \T1/cmr/m/n/10 - Pozwala na za-pisy-wanie ulu-bionych naukowców
+ []
+
+
+Overfull \hbox (18.96356pt too wide) in paragraph at lines 64--65
 \T1/cmr/m/n/10 spowodowa¢, »e skrypty przes-tan¡ dzi-aªa¢. Mo»liwe rozwi¡zanie to wprowadze-
  []
 
@@ -177,20 +182,22 @@ Overfull \hbox (18.96356pt too wide) in paragraph at lines 62--63
 [5]
 
 [6]
-Overfull \hbox (6.9066pt too wide) in paragraph at lines 126--127
+
+[7]
+Overfull \hbox (6.9066pt too wide) in paragraph at lines 128--129
 []\T1/cmr/bx/n/10 Testowanie API \T1/cmr/m/n/10 - Testy jed-nos-tkowe, zostan¡ ustalone z dru»yn¡ testerów. 
  []
 
 
-Overfull \hbox (9.60843pt too wide) in paragraph at lines 127--128
+Overfull \hbox (9.60843pt too wide) in paragraph at lines 129--130
 []\T1/cmr/bx/n/10 Testowanie fron-tendu \T1/cmr/m/n/10 - Testy in-te-gra-cyjne i jed-nos-tkowe, zostan¡ ustalone
  []
 
 
 
-[7]
+[8]
 
-[8] (./raport.aux)
+[9] (./raport.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-09-10>
@@ -205,10 +212,10 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  56i,6n,65p,368b,197s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on raport.pdf (8 pages, 155575 bytes).
+Output written on raport.pdf (9 pages, 156266 bytes).
 PDF statistics:
- 71 PDF objects out of 1000 (max. 8388607)
- 45 compressed objects within 1 object stream
+ 74 PDF objects out of 1000 (max. 8388607)
+ 47 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

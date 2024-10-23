@@ -2,16 +2,16 @@
 \contentsline {section}{\numberline {2}Opis działania aplikacji}{3}{}%
 \contentsline {subsection}{\numberline {2.1}Główne widoki}{3}{}%
 \contentsline {subsection}{\numberline {2.2}Logika biznesowa aplikacji}{4}{}%
-\contentsline {subsection}{\numberline {2.3}Mechanizmy}{4}{}%
+\contentsline {subsection}{\numberline {2.3}Mechanizmy}{5}{}%
 \contentsline {subsection}{\numberline {2.4}Możliwe wyzwania i rozwiązania}{5}{}%
 \contentsline {subsection}{\numberline {2.5}Pytania do zamawiającego}{5}{}%
-\contentsline {section}{\numberline {3}Sekcja techniczna}{6}{}%
-\contentsline {subsection}{\numberline {3.1}Scraper}{6}{}%
-\contentsline {subsection}{\numberline {3.2}Baza danych}{6}{}%
-\contentsline {subsection}{\numberline {3.3}API}{6}{}%
-\contentsline {subsection}{\numberline {3.4}Frontend}{6}{}%
-\contentsline {subsection}{\numberline {3.5}Hosting}{6}{}%
-\contentsline {subsection}{\numberline {3.6}Docker}{6}{}%
-\contentsline {subsection}{\numberline {3.7}Dokumentacja}{7}{}%
-\contentsline {subsection}{\numberline {3.8}Testowanie}{7}{}%
-\contentsline {section}{\numberline {4}Rozszerzenie projektu na przyszłość}{8}{}%
+\contentsline {section}{\numberline {3}Sekcja techniczna}{7}{}%
+\contentsline {subsection}{\numberline {3.1}Scraper}{7}{}%
+\contentsline {subsection}{\numberline {3.2}Baza danych}{7}{}%
+\contentsline {subsection}{\numberline {3.3}API}{7}{}%
+\contentsline {subsection}{\numberline {3.4}Frontend}{7}{}%
+\contentsline {subsection}{\numberline {3.5}Hosting}{7}{}%
+\contentsline {subsection}{\numberline {3.6}Docker}{7}{}%
+\contentsline {subsection}{\numberline {3.7}Dokumentacja}{8}{}%
+\contentsline {subsection}{\numberline {3.8}Testowanie}{8}{}%
+\contentsline {section}{\numberline {4}Rozszerzenie projektu na przyszłość}{9}{}%
